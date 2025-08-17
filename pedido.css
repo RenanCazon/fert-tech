@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.pedido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.date-time {
+    text-align: right;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.cliente-info, .produtos-servicos, .totais, .cobranca, .transporte, .atencao, .observacoes, footer {
+    margin-bottom: 20px;
+}
+
+.cliente-info h2, .produtos-servicos h2, .totais h2, .cobranca h2, .transporte h2, .atencao h2, .observacoes h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+.cliente-detalhes, .info-adicional, .atencao p, .cobranca p, .transporte p, .observacoes p, .observacoes ol {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.valor-total {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+footer p {
+    text-align: right;
+    margin: 5px 0;
+}
+
+@media print {
+    body {
+        background-color: #fff;
+    }
+
+    .pedido {
+        border: none;
+    }
+}

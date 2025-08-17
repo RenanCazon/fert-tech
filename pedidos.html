@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="pedidos.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="cadastro-clientes.html">Cadastro Clientes</a></li>
+                <li><a href="cadastro_fornecedores.html">Cadastro Fornecedores</a></li>
+                <li><a href="cadastro_produtos.html">Cadastro Produtos</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Lista de Pedidos</h1>
+        <button id="open-estrutura">Abrir Pedido de Venda</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID do Pedido</th>
+                    <th>Cliente</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os pedidos serão inseridos aqui dinamicamente -->
+            </tbody>
+        </table>
+    </main>
+    <script>
+        document.getElementById('open-estrutura').addEventListener('click', function() {
+            window.location.href = 'estrutura_pv.html';
+        });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4 Tech</title>
+    <!-- MATERIAL CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Sharp" rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <aside id="sidebar">
+            <!-- Conteúdo da sidebar -->
+
+                <div class="top">
+                    <div class="logo">
+                        <img src="./images/logo.png">
+                        <h2>M4<span class="danger">TECH</span></h2>
+                    </div>
+                    <div class="close" id="close-btn">
+                        <span class="material-symbols-sharp">close</span>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <a href="dashboard.html"  class="active">
+                        <span class="material-symbols-sharp">grid_view</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="cadastro_clientes.html">
+                        <span class="material-symbols-sharp">group_add</span>
+                        <h3>Clientes</h3>
+                    </a>
+                    <a href="cadastro_fornecedores.html">
+                        <span class="material-symbols-sharp">person_add</span>
+                        <h3>Fornecedores</h3>
+                    </a>
+                    <a href="cadastro_produtos.html">
+                        <span class="material-symbols-sharp">post_add</span>
+                        <h3>Produtos</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-sharp">receipt_long</span>
+                        <h3>Cotações</h3>
+                    </a>
+                    <a href="pedidos.html">
+                        <span class="material-symbols-sharp">order_approve</span>
+                        <h3>Pedidos</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-sharp">local_shipping</span>
+                        <h3>Ord. Carreg.</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-sharp">view_kanban</span>
+                        <h3>Santa Bárbara D'Oeste</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-sharp">view_kanban</span>
+                        <h3>Uberlândia</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-sharp">credit_card</span>
+                        <h3>Contas á Pagar</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-sharp">payments</span>
+                        <h3>Contas á Receber</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-sharp">logout</span>
+                        <h3>Sair</h3>
+                    </a>
+                </div>
+            </aside>
+            
+        </aside>
+
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-symbols-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Vendas Totais</h3>
+                            <h1>R$00,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Últimas 24 hHoras</small>
+                </div>
+                <!-------------------END OF SALES------------------>
+                <div class="expenses">
+                    <span class="material-symbols-sharp">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total á Receber</h3>
+                            <h1>R$00,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Últimas 24 hHoras</small>
+                </div>
+                <!-------------------END OF EXPENSES------------------>
+                <div class="income">
+                    <span class="material-symbols-sharp">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total á Pagar</h3>
+                            <h1>R$00,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Últimas 24 hHoras</small>
+                </div>
+                <!-------------------END OF INCOME----------------->
+            </div>
+            <!------------------- BLOCO DOS PEDIDOS RECENTES NA PAGINA INICIAL ----------------->
+            <div class="recent-orders">
+                <h2>Pedidos Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Número do Pedido</th>
+                            <th>Cliente</th>
+                            <th>Produto</th>
+                            <th>Quantidade (Ton)</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                 <tbody>
+                    <tr>
+                            <td>PV-0050-M4-2023</td>
+                            <td>CJ Agronegócio LTDA</td>
+                            <td>Fosfato Monoamônico (11-52)</td>
+                            <td>50</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>PV-0049-M4-2023</td>
+                            <td>Nordeste Comércio de Fertilizantes e Transportes LTDA</td>
+                            <td>Fosfato Monoamônico (11-52)</td>
+                            <td>30</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr><tr>
+                            <td>PV-0048-M4-2023</td>
+                            <td>MCZ Agricultura e Pecuária LTDA</td>
+                            <td>Ureia Prill (46%)</td>
+                            <td>39</td>
+                            <td class="success">Entregue</td>
+                            <td class="primary">Detalhes</td>
+                        </tr><tr>
+                            <td>PV-0047-M4-2023</td>
+                            <td>GT Fabricação Comércio, Representação Comercial e Serviços Agrícolas</td>
+                            <td>Fosfato Monoamônico (11-52)</td>
+                            <td>32</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr><tr>
+                            <td>PV-0046-M4-2023</td>
+                            <td>GT Fabricação Comércio, Representação Comercial e Serviços Agrícolas</td>
+                            <td>NPK (05.00.52)</td>
+                            <td>50</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr><tr>
+                            <td>PV-0045-M4-2023</td>
+                            <td>GT Fabricação Comércio, Representação Comercial e Serviços Agrícolas</td>
+                            <td>Fosfato Monoamônico (11-52)</td>
+                            <td>50</td>
+                            <td class="danger">Cancelado</td>
+                            <td class="primary">Detalhes</td>
+                        </tr><tr>
+                            <td>PV-0044-M4-2023</td>
+                            <td>Joancirio Marques Santana Silva</td>
+                            <td>Fosfato Monoamônico (11-52)</td>
+                            <td>18</td>
+                            <td class="success">Entregue</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+                <a href="#">Mostrar Todos</a>
+            </div>
+        </main>
+        <!-------------------FIM DO BLOCO DOS PEDIDOS RECENTES NA PAGINA INICIAL----------------->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-symbols-sharp active">light_mode</span>
+                    <span class="material-symbols-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Seja Bem Vindo!</p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-4.jpg">
+                    </div>
+                </div>
+             </div>
+             <!--------------END OF TOP------------>
+             <!--------------INICIO CLIENTES RECEM CADASTRADOS TELA INICIAL------------>
+             <div class="recent-updates">
+                <h2>Clientes Recém Cadastrados</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-1.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Royal Química LTDA</b> Ramo Industrial, Produto Utilizado Ureia.</p>
+                            <small class="text-muted">Cadastrado por Antônio Jr.</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>BSC Química LTDA Matriz</b> Ramo Industrial, Produto Utilizado Ureia.</p>
+                            <small class="text-muted">Cadastrado por Mario Jr.</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Bahia Fertilizantes LTDA</b> Ramo Fertilizantes, Produto Utilizado Vários.</p>
+                            <small class="text-muted">Cadastrado por Renan Cazon.</small>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <!--------------FINAL CLIENTES RECEM CADASTRADOS TELA INICIAL------------>
+             <!--------------INICIO BLOCO RESUMO COMERCIAL DA TELA INICIAL------------>
+             <div class="sales-analytics">
+                <h2>Resumo Comercial</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-symbols-sharp">shopping_cart</span>  
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Pedidos Entregues</h3>
+                            <small class="text-muted">Neste Mês</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>65</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-symbols-sharp">local_mall</span>  
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Pedidos Cancelados</h3>
+                            <small class="text-muted">Neste Mês</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>10</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-symbols-sharp">person</span>  
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Pedidos Devolvidos</h3>
+                            <small class="text-muted">Neste Mês</small>
+                        </div>
+                        <h5 class="warning">-40%</h5>
+                        <h3>5</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-symbols-sharp">add</span>
+                        <h3>Cadastrar Novo Pedido</h3>    
+                    </div>
+
+                </div>
+             </div>
+        </div>
+    </div>
+    <script src="./dashboard.js"></script>
+</body>
+</html>
